@@ -18,7 +18,6 @@ var app = new Vue({
                 this.services = response.data.services;
                 this.projects = response.data.projects;
                 this.skills = response.data.skills;
-
             })
             .catch(error => {
                 console.log('Error: ', error);
