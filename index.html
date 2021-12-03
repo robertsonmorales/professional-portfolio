@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hi there, I am Robertson Morales. Web Designer and Developer">
+    <meta name="description" content="Hi there, I am Jethro Caparosso. Web Designer and Developer">
 
     <title>Jethro Caparroso</title>
     <!-- preloads -->
@@ -35,184 +35,101 @@
 </head>
 <body>
     <div id="app">
-        <header>
-            <nav class="navbar navbar-expand-md navbar-light fixed-top" id="navbar">
-                <div class="container">
-                    <button class="navbar-brand border-0"
-                        onclick="navSelected('home')"
-                        style="background-color: transparent; outline: none;">
-                        <span class="h5 mb-0 font-weight-bold secondary-font">Jethro.</span>
-                    </button>
-                    
-                    <button class="btn navbar-toggler border-0"
-                        type="button" 
-                        data-toggle="collapse"
-                        data-target="#toggleNavbar" 
-                        aria-controls="toggleNavbar" 
-                        aria-expanded="false" 
-                        aria-label="Toggle navigation"
-                        style="outline: none;">
-                        <i class="fas fa-bars"></i>
-                    </button>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top" id="navbar">
+            <div class="container">
+                <button class="navbar-brand border-0"
+                    onclick="navSelected('home')"
+                    style="background-color: transparent; outline: none;">
+                    <span class="h5 mb-0 font-weight-bold secondary-font">Jethro.</span>
+                </button>
                 
-                    <div class="collapse navbar-collapse" id="toggleNavbar">    
-                        <ul class="navbar-nav mr-auto"></ul>
-                        <div class="navbar-text">
-                            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                                <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
-                                    <button class="nav-link navbar font-weight-500 active"
-                                    id="nav-home" 
-                                    onclick="navSelected('home')">Home</button>
-                                </li>
-                                <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
-                                    <button class="nav-link navbar font-weight-500"
-                                    id="nav-about" 
-                                    onclick="navSelected('about')">About me</button>
-                                </li>
-                                <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
-                                    <button class="nav-link navbar font-weight-500"
-                                    id="nav-services"
-                                    onclick="navSelected('services')">Services</button>
-                                </li>
-                                <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
-                                    <button class="nav-link navbar font-weight-500"
-                                    id="nav-projects"
-                                    onclick="navSelected('projects')">Projects</button>
-                                </li>
-                                <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
-                                    <button class="nav-link navbar font-weight-500"
-                                    id="nav-skills"
-                                    onclick="navSelected('skills')">Skills</button>
-                                </li>
-                                <li class="nav-item mr-0 mb-2 mb-md-0"> <!-- mr-md-5 -->
-                                    <button class="nav-link navbar font-weight-500"
-                                    id="nav-contact"
-                                    onclick="navSelected('contact')">Contact me</button>
-                                </li>
-                                
-                                <!-- <li class="nav-item">
-                                    <button class="nav-link navbar" id="dark-light-mode" title="Dark Mode">
-                                        <span class="dark-theme"><i class="fas fa-moon"></i></span>
-                                        <span class="light-theme d-none"><i class="fas fa-sun"></i></span>
-                                    </button>
-                                </li> -->
-                            </ul>
-                        </div>
+                <button class="btn navbar-toggler border-0"
+                    type="button" 
+                    data-toggle="collapse"
+                    data-target="#toggleNavbar" 
+                    aria-controls="toggleNavbar" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation"
+                    style="outline: none;">
+                    <i class="fas fa-bars"></i>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="toggleNavbar">    
+                    <ul class="navbar-nav mr-auto"></ul>
+                    <div class="navbar-text">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
+                                <button class="nav-link navbar font-weight-500 active"
+                                id="nav-home" 
+                                onclick="navSelected('home')">Home</button>
+                            </li>
+                            <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
+                                <button class="nav-link navbar font-weight-500"
+                                id="nav-services"
+                                onclick="navSelected('services')">Services</button>
+                            </li>
+                            <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
+                                <button class="nav-link navbar font-weight-500"
+                                id="nav-projects"
+                                onclick="navSelected('projects')">Projects</button>
+                            </li>
+                            <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
+                                <button class="nav-link navbar font-weight-500"
+                                id="nav-about" 
+                                onclick="navSelected('about')">About me</button>
+                            </li>
+                            <li class="nav-item mr-0 mb-2 mb-md-0"> <!-- mr-md-5 -->
+                                <button class="nav-link navbar font-weight-500"
+                                id="nav-contact"
+                                onclick="navSelected('contact')">Contact me</button>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
         <main>
             <!-- HERO SECTION -->
-            <div class="container">
-                <div class="pt-0 pt-md-5 px-3 px-md-0">
-                    <div class="row no-gutters justify-content-md-between justify-content-lg-center align-items-center flex-column-reverse flex-md-row mt-md-5 px-3 px-md-0">
+            <header class="container">
+                <div class="row no-gutters justify-content-md-between justify-content-lg-center align-items-center flex-column-reverse flex-md-row mt-md-5 px-3 px-md-0">
     
-                        <div class="col">
-                            <div class="animate__animated animate__fadeIn animate__delay-1s pr-lg-5">
-                                <span class="mb-3 font-weight-bold">Hi there,</span>
+                    <div class="col">
+                        <div class="animate__animated animate__fadeIn animate__delay-1s pr-lg-5">
+                            <span class="mb-3">Hi there,</span>
+
+                            <div class="mb-3 h1 font-weight-bold secondary-font">I am Jethro, a Web <span class="text-primary">Designer</span> & <span class="text-primary">Developer</span></div>
     
-                                <div class="mb-3 h1 font-weight-bold secondary-font">I am Jethro, a Web <span class="text-primary">Designer</span> & <span class="text-primary">Developer</span></div>
+                            <p class="mb-4">Specializes in User Interface Design, Responsive Web Design, and Web Applications.</p>
         
-                                <p class="mb-4">Specializes in User Interface Design, Responsive Web Design, and Web Applications.</p>
-            
-                                <button class="btn btn-primary py-2 px-4"
-                                    onclick="navSelected('projects')">
-                                    <span>View My Works</span>
-                                </button>
-                            </div>
-                        </div>
+                            <button class="btn btn-primary py-2 px-4"
+                                onclick="navSelected('projects')">View Projects</button>
 
-                        <div class="col-7">
-                            <div class="animate__animated animate__fadeIn animate__delay-1s">
-                                <img src="resources/images/squigly-line.png" class="squigly-line">
-                                <img src="resources/images/s-spiral.png" class="s-spiral">
-                                <img src="resources/images/me/profile-transparent.png" 
-                                class="img-fluid bg-light rounded-top" 
-                                alt="avatar" 
-                                id="avatar">
-                            </div>
+                            <a href="#download-resume" 
+                                class="btn btn-outline-primary py-2 px-4">
+                                <span class="mr-2">Download Resume</span>
+                                <span><i class="fas fa-arrow-alt-circle-down"></i></span>
+                            </a>
                         </div>
-                            
                     </div>
-                </div>
-            </div>
-            <!-- ENDS HERE -->
 
-            <!-- ABOUT ME --> 
-            <div class="py-5 bg-light">
-                <div id="about"></div>
-                <div class="container">
-
-                    <div class="row no-gutters flex-column flex-md-row align-items-md-center my-5 py-5">
-                        <div class="col col-md-5">
-                            <div class="mb-2 mb-md-0 text-center overflow-hidden">
-                                <img class="img-fluid bg-white rounded-circle lazyload" 
-                                data-src="resources/images/me/profile-transparent.png" 
-                                alt="avatar">
-                            </div>
+                    <div class="col-7">
+                        <div class="animate__animated animate__fadeIn animate__delay-1s">
+                            <!-- <img src="resources/images/squigly-line.png" class="squigly-line">
+                            <img src="resources/images/s-spiral.png" class="s-spiral"> -->
+                            <img src="resources/images/me/profile-transparent.png" 
+                            class="img-fluid bg-light rounded-top" 
+                            alt="avatar" 
+                            id="avatar">
                         </div>
+                    </div>
                         
-                        <div class="col-1"></div>
-    
-                        <div class="col">
-                            <div class="d-flex flex-column align-items-center align-items-md-start mb-4">
-                                <span class="h1 font-weight-600 secondary-font">About Me</span>
-                            </div>
-    
-                            <div class="mb-4">
-                                <p>Hello, my name is Jethro Caparosso. A self-taught web designer &amp; developer. I grew up in Palapag, Northern Samar.</p>
-                                <p>I started my career by watching videos and articles on the internet. It was hard at first. But after just a few months of studying and patience. I had built static websites, web-based information systems as I improve in getting better and better. I'm also interested in people where I can excel, learn or absorb and give my best to become an expert or professional.</p>
-                            </div>
-    
-                            <div class="text-left mb-5">
-                                <a href="#download-resume" 
-                                    class="btn btn-primary py-2 px-4">
-                                    <span class="mr-2">Download Resume</span>
-                                    <i class="fas fa-arrow-alt-circle-down"></i>
-                                </a>
-                            </div>
-
-                            <span class="h5 font-weight-600 secondary-font">Social Networks</span>
-                            <div class="mb-3"></div>
-
-                            <div class="flexbox-start mb-4">
-                                <div class="pr-2">
-                                    <a href="#facebook" 
-                                    class="btn  btn-light flexbox-center"
-                                    style="color: #4267B2 !important;">
-                                        <i class="fab fa-facebook-f fa-lg"></i>
-                                        <span class="ml-2 font-size-sm">facebook</span>
-                                    </a>
-                                </div>
-
-                                <div class="pr-2">
-                                    <a href="#linkedin" 
-                                    class="btn  btn-light flexbox-center"
-                                    style="color: rgb(10, 102, 194) !important;">
-                                        <i class="fab fa-linkedin-in fa-lg"></i>
-                                        <span class="ml-2 font-size-sm">linkedin</span>
-                                    </a>
-                                </div>
-
-                                <div class="pr-2">
-                                    <a href="#github" 
-                                    class="btn  btn-light flexbox-center"
-                                    style="color: rgba(0, 0, 0, 0.8) !important;">
-                                        <i class="fab fa-github fa-lg"></i>
-                                        <span class="ml-2 font-size-sm">github</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-            </div>
+            </header>
             <!-- ENDS HERE -->
 
             <!-- SERVICES -->
-            <div id="services"></div>
-            <div class="my-5 py-5">
+            <div id="services" class="bg-light"></div>
+            <section class="mb-5 pb-5 bg-light">
                 <div class="text-center">
                     <div class="text-primary font-weight-600">SERVICES</div>
                     <div class="h2 font-weight-600 secondary-font">Specializing In</div>
@@ -224,7 +141,7 @@
                             <div class="mb-2 p-3">
                                 <img src="resources/images/svg/services/ui-ux.svg"
                                 alt="UI/UX Design"
-                                width="80">
+                                width="55">
                             </div>
                             <div class="card-body">
                                 <div class="h-100 d-flex flex-column">
@@ -238,7 +155,7 @@
                             <div class="mb-2 p-3">
                                 <img src="resources/images/svg/services/rwd.svg"
                                 alt="Responsive Website Design"
-                                width="80">
+                                width="55">
                             </div>
                             <div class="card-body">
                                 <div class="h-100 d-flex flex-column">
@@ -254,7 +171,7 @@
                             <div class="mb-2 p-3">
                                 <img src="resources/images/svg/services/web-app.svg"
                                 alt="Website Application"
-                                width="80">
+                                width="55">
                             </div>
                             <div class="card-body">
                                 <div class="h-100 d-flex flex-column">
@@ -268,7 +185,7 @@
                             <div class="mb-2 p-3">
                                 <img src="resources/images/svg/services/html.svg"
                                 alt="Convert Prototypes to HTML pages"
-                                width="80">
+                                width="55">
                             </div>
                             <div class="card-body">
                                 <div class="h-100 d-flex flex-column">
@@ -279,21 +196,21 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             <!-- ENDS HERE -->
 
             <!-- PROJECTS -->            
             <div id="projects"></div>
-            <div class="my-5 py-5 bg-light">
+            <section class="my-5 py-5">
                 <div class="text-center">
                     <div class="text-primary font-weight-600">PROJECTS</div>
-                    <div class="h2 font-weight-600 secondary-font">My Works</div>
+                    <div class="h2 font-weight-600 secondary-font">Best Works</div>
                 </div>
                 <div class="container">
 
                     <div class="row no-gutters align-items-center flex-column-reverse flex-md-row my-3 py-5">
                         <div class="col">
-                            <div class="d-none d-md-block h2 text-primary font-weight-600">01</div>
+                            <div class="d-none d-md-block h1 text-primary font-weight-600">01</div>
 
                             <div class="h4 font-weight-500 text-dark">Dashboard UI Design</div>
 
@@ -322,12 +239,10 @@
                             
                             <div class="mt-3 flexbox-start">
                                 <a href="#view-live"
-                                    class="flexbox-center py-2 px-3 mr-2 btn btn-primary">
-                                    <span>View Live</span>
-                                </a>
+                                    class="py-2 px-3 mr-2 btn btn-primary">View Live</a>
 
                                 <a href="#source-code" 
-                                    class="flexbox-center py-2 px-3 btn btn-link text-dark">
+                                    class="py-2 px-3 btn btn-outline-primary">
                                     <i class="fab fa-github fa-lg"></i>
                                 </a>
                             </div>
@@ -335,15 +250,15 @@
                         <div class="col col-md-1"></div>
                         <div class="col mb-4 mb-md-0">
                             <a href="#view-live">
-                                <img data-src="https://cdn.dribbble.com/users/1615584/screenshots/15210251/media/a52605dae1af2a9397d2a20e6b849c53.jpg?compress=1&resize=1200x900" 
-                                    class="img-fluid shadow rounded lazyload">
+                                <img src="https://cdn.dribbble.com/users/1615584/screenshots/15210251/media/a52605dae1af2a9397d2a20e6b849c53.jpg?compress=1&resize=1200x900" 
+                                    class="img-fluid shadow rounded">
                             </a>
                         </div>
                     </div>
 
                     <div class="row no-gutters align-items-center flex-column-reverse flex-md-row-reverse my-3 py-5">
                         <div class="col">
-                            <div class="d-none d-md-block h2 text-primary font-weight-600">02</div>
+                            <div class="d-none d-md-block h1 text-primary font-weight-600">02</div>
 
                             <div class="h4 font-weight-500 text-dark">Music Player UI Design</div>
 
@@ -372,12 +287,10 @@
                             
                             <div class="mt-3 flexbox-start">
                                 <a href="#view-live" 
-                                class="flexbox-center py-2 px-3 mr-2 btn btn-primary">
-                                    <span>View Live</span>
-                                </a>
+                                class="py-2 px-3 mr-2 btn btn-primary">View Live</a>
 
                                 <a href="#source-code" 
-                                class="flexbox-center py-2 px-3 btn btn-link text-dark">
+                                class="py-2 px-3 btn btn-outline-primary">
                                     <i class="fab fa-github fa-lg"></i>
                                 </a>
                             </div>
@@ -393,7 +306,7 @@
 
                     <div class="row no-gutters align-items-center flex-column-reverse flex-md-row my-3 py-5">
                         <div class="col">
-                            <div class="d-none d-md-block h2 text-primary font-weight-600">03</div>
+                            <div class="d-none d-md-block h1 text-primary font-weight-600">03</div>
 
                             <div class="h4 font-weight-500 text-dark">Login Form UI Design</div>
 
@@ -416,12 +329,10 @@
                             
                             <div class="mt-3 flexbox-start">
                                 <a href="#view-live" 
-                                class="flexbox-center py-2 px-3 mr-2 btn btn-primary">
-                                    <span>View Live</span>
-                                </a>
+                                class="py-2 px-3 mr-2 btn btn-primary">View Live</a>
 
                                 <a href="#source-code" 
-                                class="flexbox-center py-2 px-3 btn btn-link text-dark">
+                                class="py-2 px-3 btn btn-outline-primary">
                                     <i class="fab fa-github fa-lg"></i>
                                 </a>
                             </div>
@@ -437,7 +348,7 @@
 
                     <div class="row no-gutters align-items-center flex-column-reverse flex-md-row-reverse my-3 py-5">
                         <div class="col">
-                            <div class="d-none d-md-block h2 text-primary font-weight-600">03</div>
+                            <div class="d-none d-md-block h1 text-primary font-weight-600">04</div>
 
                             <div class="h4 font-weight-500 text-dark">Chat Messaging UI Design</div>
 
@@ -466,12 +377,10 @@
                             
                             <div class="mt-3 flexbox-start">
                                 <a href="#view-live" 
-                                    class="flexbox-center py-2 px-3 mr-2 btn btn-primary">
-                                    <span>View Live</span>
-                                </a>
+                                    class="py-2 px-3 mr-2 btn btn-primary">View Live</a>
 
                                 <a href="#source-code" 
-                                    class="flexbox-center py-2 px-3 btn btn-link text-dark">
+                                    class="py-2 px-3 btn btn-outline-primary">
                                     <i class="fab fa-github fa-lg"></i>
                                 </a>
                             </div>
@@ -486,39 +395,72 @@
                     </div>
 
                 </div>
-            </div>
+            </section>
             <!-- ENDS HERE -->
 
-            <!-- SKILLS -->
-            <div id="skills"></div>
-            <div class="my-5 py-5">
-                <div class="text-center">
-                    <div class="text-primary font-weight-600">ABOUT MY</div>
-                    <div class="h2 font-weight-600 secondary-font">Skills and Expertise</div>
-                </div>
+            <!-- ABOUT ME --> 
+            <section class="py-5 bg-light">
+                <div id="about"></div>
+                <div class="container">
 
-                <div class="container flexbox-center">
-                    <div class="text-center my-3 my-md-5 w-100 w-md-50">
-                        <img data-src="resources/images/svg/skills/html.svg" alt="HTML 5" class="img-fluid img-fluid-extension p-4 lazyload" title="HTML 5">
-                        <img data-src="resources/images/svg/skills/css3.svg" alt="CSS 3" class="img-fluid img-fluid-extension p-4 lazyload" title="CSS 3">
-                        <img data-src="resources/images/svg/skills/sass.svg" alt="Sass" class="img-fluid img-fluid-extension p-4 lazyload" title="Sass">
-                        <img data-src="resources/images/svg/skills/javascript.svg" alt="JavaScript" class="img-fluid img-fluid-extension p-4 lazyload" title="JavaScript">
-                        <img data-src="resources/images/svg/skills/jquery.svg" alt="JQuery" class="img-fluid img-fluid-extension p-4 lazyload" title="JQuery">
-                        <img data-src="resources/images/svg/skills/bootstrap.svg" alt="Bootstrap" class="img-fluid img-fluid-extension p-4 lazyload" title="Bootstrap">
-                        <img data-src="resources/images/svg/skills/angular.svg" alt="AngularJS" class="img-fluid img-fluid-extension p-4 lazyload" title="AngularJS">
-                        <img data-src="resources/images/svg/skills/php.svg" alt="PHP" class="img-fluid img-fluid-extension p-4 lazyload" title="PHP">
-                        <img data-src="resources/images/svg/skills/mysql.svg" alt="MySQL" class="img-fluid img-fluid-extension p-4 lazyload" title="MySQL">
-                        <img data-src="resources/images/svg/skills/laravel.svg" alt="Laravel" class="img-fluid img-fluid-extension p-4 lazyload" title="Laravel">
-                        <img data-src="resources/images/svg/skills/git.svg" alt="git" class="img-fluid img-fluid-extension p-4 lazyload" title="git">
-                        <img data-src="resources/images/svg/skills/adobe-xd.svg" alt="Adobe XD" class="img-fluid img-fluid-extension p-4 lazyload" title="Adobe XD">
+                    <div class="row no-gutters flex-column flex-md-row align-items-md-center my-5 py-5">
+                        <div class="col col-md-5">
+                            <div class="mb-2 mb-md-0 text-center overflow-hidden">
+                                <img class="img-fluid bg-white rounded-circle lazyload" 
+                                data-src="resources/images/me/profile-transparent.png" 
+                                alt="avatar">
+                            </div>
+                        </div>
+                        
+                        <div class="col-1"></div>
+    
+                        <div class="col">
+                            <div class="d-flex flex-column align-items-center align-items-md-start mb-4">
+                                <h5>A LITTLE BIT ABOUT ME</h5>
+                                <span class="h1 font-weight-600 secondary-font text-primary">Jetro Caparosso</span>
+                            </div>
+    
+                            <div class="mb-4">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nemo temporibus soluta culpa voluptate possimus commodi repellat beatae dolorum repellendus officia, quas sapiente doloribus molestiae in unde delectus, consequatur cumque?</p>
+                            </div>
+
+                            <span class="h5 font-weight-600 secondary-font">Social Networks</span>
+                            <div class="mb-3"></div>
+
+                            <div class="flexbox-start mb-4">
+                                <div class="pr-2">
+                                    <a href="#facebook" 
+                                    class="btn text-light"
+                                    style="background-color: #4267B2 !important;">
+                                        <i class="fab fa-facebook-f fa-lg"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-2">
+                                    <a href="#linkedin" 
+                                    class="btn text-light"
+                                    style="background-color: rgb(10, 102, 194) !important;">
+                                        <i class="fab fa-linkedin-in fa-lg"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-2">
+                                    <a href="#github" 
+                                    class="btn text-light"
+                                    style="background-color: rgba(0, 0, 0, 0.8) !important;">
+                                        <i class="fab fa-github fa-lg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
             <!-- ENDS HERE -->
 
             <!-- CONTACT ME -->
             <div id="contact"></div>
-            <div class="mt-5 pt-5 pb-2 bg-light">
+            <section class="mt-5 pt-5 pb-2">
                 <div class="text-center">
                     <div class="text-primary font-weight-600">CONTACT ME</div>
                     <div class="h2 font-weight-600 secondary-font">Stay Connected</div>
@@ -565,7 +507,7 @@
                                     id="validate-subject"></span>
                                 </div>
                                 <div class="input-group">
-                                    <label for="message">Your message here</label>
+                                    <label for="message">Message</label>
                                     <textarea name="message" 
                                     id="message" 
                                     cols="30" 
@@ -591,10 +533,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             <!-- ENDS HERE -->
         </main>
-        <footer class="bg-light">
+        <footer>
             <p class="text-center font-size-sm">© <span id="year"></span> | Jethro Caparosso</p>
         </footer>
     </div>
@@ -612,10 +554,10 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 </div>
                 <div class="modal-body">
-                    <p>Hi! I'm sorry but this service is under maintenance, thank you for understanding. You can contact me directly to <a href="mailto:trebormoralesson@gmail.com">trebormoralesson@gmail.com</a>.</p>
+                    <p>Hi! I'm sorry but this service is under maintenance, thank you for understanding.</p>
                 </div>
-                <div class="modal-footer justify-content-center bg-light">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">Ok, I understand</button>
+                <div class="modal-footer justify-content-end bg-light">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>

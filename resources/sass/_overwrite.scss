@@ -27,7 +27,6 @@
         outline: none;
         border: none;
         background-color: transparent;
-        color: #555 !important;
         font-size: .8rem !important;
 
         &:hover{
@@ -37,7 +36,6 @@
 }
 
 .active{
-    border-bottom: 3px solid $primary !important;
     font-weight: 600 !important;
     color: $primary !important;
 }
