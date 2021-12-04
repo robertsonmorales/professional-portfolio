@@ -45,22 +45,12 @@
 .btn{
     border-radius: $radius !important;
     font-weight: 500;
-    box-shadow: $drop-shadow;
+    box-shadow: $drop-shadow !important;
     transition: all .2s ease-out;
-
-    &:hover{
-        box-shadow: $drop-shadow__hovered !important;
-        transform: translateY(-2px);
-    }
 
     &:active{
         box-shadow: $drop-shadow__active !important;
-        transform: translateY(0);
-    }
-
-    &:focus{
-        box-shadow: $drop-shadow__active !important;
-        transform: translateY(0);
+        transform: translateY(2px);
     }
 }
 
@@ -101,11 +91,5 @@
     .invalid-feedback{
         font-weight: 500 !important;
     }
-}
-// ENDS HERE
-
-// SHADOW
-.shadow-lg{
-    box-shadow: $light-shadow !important;
 }
 // ENDS HERE
