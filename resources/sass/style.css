@@ -10884,6 +10884,11 @@ body {
   background-color: transparent !important;
 }
 
+.card .card-footer {
+  border: 0;
+  background-color: transparent;
+}
+
 .font-weight-bolder {
   font-weight: 800 !important;
 }
@@ -10906,36 +10911,47 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .flexbox-start {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .flexbox-between {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flexbox-around {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 /* ENDS HERE*/
@@ -10993,42 +11009,18 @@ body {
 }
 
 /* ENDS HERE */
-/* ICONS 3Ds */
-.squigly-line {
-  -webkit-transform: translate(-31%, -54%);
-          transform: translate(-31%, -54%);
-  position: absolute;
-  width: 100px;
-  -webkit-filter: drop-shadow(4px 6px 3px rgba(0, 0, 0, 0.2));
-          filter: drop-shadow(4px 6px 3px rgba(0, 0, 0, 0.2));
-  -webkit-animation-name: floatForSquigly;
-          animation-name: floatForSquigly;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-.s-spiral {
-  -webkit-transform: translate(0%, 0%);
-          transform: translate(0%, 0%);
-  position: absolute;
-  width: 110px;
-  -webkit-filter: drop-shadow(2px 6px 2px rgba(0, 0, 0, 0.2));
-          filter: drop-shadow(2px 6px 2px rgba(0, 0, 0, 0.2));
-  right: 0;
-  -webkit-animation-name: floatForSSpiral;
-          animation-name: floatForSSpiral;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+/* MIN-HEIGHT 100 */
+.min-height-center-100 {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* ENDS HERE */
