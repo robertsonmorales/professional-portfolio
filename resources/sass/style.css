@@ -10906,6 +10906,17 @@ body {
   font-weight: 500 !important;
 }
 
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #673ab744;
+}
+
+.carousel-indicators .active {
+  background-color: #673ab7;
+}
+
 /* FLEXBOX */
 .flexbox-center {
   display: -webkit-box;

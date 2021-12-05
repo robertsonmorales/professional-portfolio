@@ -37,5 +37,5 @@ $(() => {
         $('#contact').css('height', $('#navbar').height() + "px");
     }   
 
-    navBarHeight(); 
+    // navBarHeight(); 
 });
