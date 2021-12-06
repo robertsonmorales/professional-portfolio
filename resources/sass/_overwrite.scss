@@ -67,6 +67,15 @@
     border: none !important;
     background-color: transparent !important;
 
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        
+        .card-text{
+            margin-top: auto;
+        }
+    }
+
     .card-footer{
         border: 0;
         background-color: transparent;
