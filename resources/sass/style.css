@@ -10894,7 +10894,10 @@ body {
 }
 
 .badge {
-  background-color: #d1d2d2 !important;
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  font-weight: normal;
+  font-size: 12px;
 }
 
 .input-group .form-control {
@@ -10915,6 +10918,10 @@ body {
 
 .carousel-indicators .active {
   background-color: #673ab7;
+}
+
+.active {
+  color: #131b23 !important;
 }
 
 /* FLEXBOX */
