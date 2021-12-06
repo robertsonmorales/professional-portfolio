@@ -82,7 +82,10 @@
 
 // BADGE
 .badge{
-    background-color: #d1d2d2 !important; // #ededed
+    background-color: #f2f2f2;
+    border-radius: 12px;
+    font-weight: normal;
+    font-size: 12px;
 }
 // ENDS HERE
 
@@ -111,5 +114,9 @@
     .active{
         background-color: $primary;
     }
+}
+
+.active{
+    color: $dark !important;
 }
 // ENDS HERE
