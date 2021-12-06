@@ -1,7 +1,7 @@
 // window.scrollTo(0,0);
 
 function navSelected(id){
-    let navbar = document.getElementsByClassName('navbar');
+    let navbar = document.getElementsByClassName('nav-link');
     for (let i = 0; i < navbar.length; i++) {
         if (navbar[i].classList.contains('active')) {
             navbar[i].classList.remove('active');   
@@ -14,8 +14,8 @@ function navSelected(id){
         window.scrollTo(0,0);
     }else{
         el.scrollIntoView();
+        document.getElementById('nav-'+id).classList.add('active');
     }
-    document.getElementById('nav-'+id).classList.add('active');
 }
 
 $(() => {
