@@ -36,8 +36,9 @@
     margin-bottom: 20px;
 
     label{
-        font-size: .9em !important;
         margin-bottom: 3px !important;
+        color: $light;
+        @extend .font-size-sm;
     }
 }
 /* ENDS HERE */
@@ -56,7 +57,7 @@
 }
 
 .font-size-sm{
-    font-size: 1em !important;
+    font-size: .9em !important;
 }
 /* ENDS HERE */
 
