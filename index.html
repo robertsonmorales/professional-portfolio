@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Hi there, I am Jethro Caparosso. Web Designer and Developer">
 
     <title>Jethro Caparroso</title>
-    <!-- preloads -->
 
     <!-- styles -->
     <link rel="preload" href="plugins/bootstrap/dist/css/bootstrap.min.css" as="style">
@@ -19,11 +19,22 @@
     <link rel="preload" href="plugins/bootstrap/dist/js/bootstrap.min.js" as="script">
     <link rel="preload" href="resources/js/script.js" as="script">
     <!-- ends here -->
-    <!-- preloads ends here -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Libre+Baskerville:wght@400&family=Source+Serif+Pro:wght@600&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <!-- images -->
+    <link rel="preload" href="resources/images/me/profile-transparent.png" as="image">
+
+    <link rel="preload" href="resources/images/sample-works/dashboard.webp" as="image">
+    <link rel="preload" href="resources/images/sample-works/music-player.webp" as="image">
+    <link rel="preload" href="resources/images/sample-works/messaging-app.webp" as="image">
+    <link rel="preload" href="resources/images/sample-works/login-form.webp" as="image">
+
+    <link rel="preload" href="resources/images/services/app-development.png" as="image">
+    <link rel="preload" href="resources/images/services/data-protection.png" as="image">
+    <link rel="preload" href="resources/images/services/html.png" as="image">
+    <link rel="preload" href="resources/images/services/responsive.png" as="image">
+    <link rel="preload" href="resources/images/services/seo.png" as="image">
+    <link rel="preload" href="resources/images/services/ui.png" as="image">
+    <!-- ends here -->
 
     <link rel="stylesheet" href="plugins/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="plugins/bootstrap/dist/css/bootstrap.min.css">
@@ -59,34 +70,34 @@
                     <div class="navbar-text">
                         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                             <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
-                                <button class="nav-link navbar font-weight-500 active"
-                                id="nav-home" 
-                                onclick="navSelected('home')">Home</button>
+                                <button class="nav-link active"
+                                    id="nav-home" 
+                                    onclick="navSelected('home')">Home</button>
                             </li>
                             <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
-                                <button class="nav-link navbar font-weight-500"
-                                id="nav-services"
-                                onclick="navSelected('services')">Services</button>
+                                <button class="nav-link"
+                                    id="nav-services"
+                                    onclick="navSelected('services')">Services</button>
                             </li>
                             <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
-                                <button class="nav-link navbar font-weight-500"
-                                id="nav-projects"
-                                onclick="navSelected('projects')">Projects</button>
+                                <button class="nav-link"
+                                    id="nav-projects"
+                                    onclick="navSelected('projects')">Projects</button>
                             </li>
                             <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
-                                <button class="nav-link navbar font-weight-500"
-                                id="nav-testimonials"
-                                onclick="navSelected('testimonials')">Testimonials</button>
+                                <button class="nav-link"
+                                    id="nav-testimonials"
+                                    onclick="navSelected('testimonials')">Testimonials</button>
                             </li>
                             <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
-                                <button class="nav-link navbar font-weight-500"
-                                id="nav-about" 
-                                onclick="navSelected('about')">About me</button>
+                                <button class="nav-link"
+                                    id="nav-about" 
+                                    onclick="navSelected('about')">About</button>
                             </li>
                             <li class="nav-item mr-0 mb-2 mb-md-0"> <!-- mr-md-5 -->
-                                <button class="nav-link navbar font-weight-500"
-                                id="nav-contact"
-                                onclick="navSelected('contact')">Contact me</button>
+                                <button class="nav-link"
+                                    id="nav-contact"
+                                    onclick="navSelected('contact')">Contact Me</button>
                             </li>
                         </ul>
                     </div>
@@ -268,10 +279,11 @@
                     <div class="col col-md-1"></div>
                     <div class="col mb-4 mb-md-0">
                         <a href="#view-live">
-                            <img src="https://cdn.dribbble.com/users/1615584/screenshots/15210251/media/a52605dae1af2a9397d2a20e6b849c53.jpg?compress=1&resize=1200x900" 
+                            <img src="resources/images/sample-works/dashboard.webp" 
                                 class="img-fluid shadow rounded"
                                 width="500"
-                                height="375">
+                                height="375"
+                                alt="Dashboard UI Design">
                         </a>
                     </div>
                 </div>
@@ -311,10 +323,11 @@
                     <div class="col col-md-1"></div>
                     <div class="col mb-4 mb-md-0">
                         <a href="#view-live">
-                            <img src="https://cdn.dribbble.com/users/4079902/screenshots/14722907/media/0699e4b3d48323f3109e459fb5294670.png?compress=1&resize=1200x900" 
+                            <img src="resources/images/sample-works/music-player.webp" 
                                 class="img-fluid shadow rounded"
                                 width="500"
-                                height="375">
+                                height="375"
+                                alt="Music Player UI Design">
                         </a>
                     </div>
                 </div>
@@ -348,10 +361,11 @@
                     <div class="col col-md-1"></div>
                     <div class="col mb-4 mb-md-0">
                         <a href="#view-live">
-                            <img src="https://cdn.dribbble.com/users/3700333/screenshots/15496797/media/786342210c702a326254634d23b009ff.png?compress=1&resize=1200x900" 
+                            <img src="resources/images/sample-works/login-form.webp" 
                                 class="img-fluid shadow rounded"
                                 width="500"
-                                height="375">
+                                height="375"
+                                alt="Login Form UI Design">
                         </a>
                     </div>
                 </div>
@@ -391,10 +405,11 @@
                     <div class="col col-md-1"></div>
                     <div class="col mb-4 mb-md-0">
                         <a href="#view-live">
-                            <img src="https://cdn.dribbble.com/users/2569995/screenshots/14945914/media/24fc53fc6317b5bd7aaa016eacf9ce0a.jpg?compress=1&resize=1200x900" 
+                            <img src="resources/images/sample-works/messaging-app.webp" 
                                 class="img-fluid shadow rounded"
                                 width="500"
-                                height="375">
+                                height="375"
+                                alt="Chat Messaging UI Design">
                         </a>
                     </div>
                 </div>
@@ -427,30 +442,37 @@
             
                                     <hr class="my-4 w-50">
         
-                                    <h5 class="mb-0">CHRISTIAN MORALES</h5>
+                                    <div class="h5 mb-0">CHRISTIAN MORALES</div>
                                     <p class="text-muted font-weight-normal">Independent Software Engineer</p>
                                     
                                     <div class="mb-4"></div>
         
-                                    <a href="#facebook" 
-                                        class="mr-3 text-muted">
-                                        <i class="fab fa-facebook fa-lg"></i>
-                                    </a>
-                                    <a href="#linkedin" 
-                                        class="mr-3 text-muted">
-                                        <i class="fab fa-linkedin-in fa-lg"></i>
-                                    </a>
-                                    <a href="#twitter" 
-                                        class="mr-3 text-muted">
-                                        <i class="fab fa-twitter fa-lg"></i>
-                                    </a>
+                                    <div class="flexbox-start">
+                                        <a href="https://facebook.com" 
+                                            target="_blank"
+                                            class="mr-3 text-muted">
+                                            <i class="fab fa-facebook fa-lg"></i>
+                                        </a>
+                                        <a href="https://linkedin.com" 
+                                            target="_blank"
+                                            class="mr-3 text-muted">
+                                            <i class="fab fa-linkedin-in fa-lg"></i>
+                                        </a>
+                                        <a href="https://twitter.com" 
+                                            target="_blank"
+                                            class="mr-3 text-muted">
+                                            <i class="fab fa-twitter fa-lg"></i>
+                                        </a>
+                                    </div>
                                 </div>
             
                                 <div class="col">
                                     <div class="animate__animated animate__fadeIn">
                                         <img src="resources/images/me/profile-transparent.png" 
-                                        class="img-fluid" 
-                                        alt="client">
+                                            class="img-fluid" 
+                                            alt="client"
+                                            width="555"
+                                            height="555">
                                     </div>
                                 </div>
                                 
@@ -465,30 +487,37 @@
             
                                     <hr class="my-4 w-50">
         
-                                    <h5 class="mb-0">CHRISTIAN MORALES</h5>
+                                    <div class="h5 mb-0">CHRISTIAN MORALES</div>
                                     <p class="text-muted font-weight-normal">Independent Software Engineer</p>
                                     
                                     <div class="mb-4"></div>
         
-                                    <a href="#facebook" 
-                                        class="mr-3 text-muted">
-                                        <i class="fab fa-facebook fa-lg"></i>
-                                    </a>
-                                    <a href="#linkedin" 
-                                        class="mr-3 text-muted">
-                                        <i class="fab fa-linkedin-in fa-lg"></i>
-                                    </a>
-                                    <a href="#twitter" 
-                                        class="mr-3 text-muted">
-                                        <i class="fab fa-twitter fa-lg"></i>
-                                    </a>
+                                    <div class="flexbox-start">
+                                        <a href="https://facebook.com" 
+                                            target="_blank"
+                                            class="mr-3 text-muted">
+                                            <i class="fab fa-facebook fa-lg"></i>
+                                        </a>
+                                        <a href="https://linkedin.com" 
+                                            target="_blank"
+                                            class="mr-3 text-muted">
+                                            <i class="fab fa-linkedin-in fa-lg"></i>
+                                        </a>
+                                        <a href="https://twitter.com" 
+                                            target="_blank"
+                                            class="mr-3 text-muted">
+                                            <i class="fab fa-twitter fa-lg"></i>
+                                        </a>
+                                    </div>
                                 </div>
             
                                 <div class="col">
                                     <div class="animate__animated animate__fadeIn">
                                         <img src="resources/images/me/profile-transparent.png" 
-                                        class="img-fluid" 
-                                        alt="client">
+                                            class="img-fluid" 
+                                            alt="client"
+                                            width="555"
+                                            height="555">
                                     </div>
                                 </div>
                                 
@@ -503,30 +532,37 @@
             
                                     <hr class="my-4 w-50">
         
-                                    <h5 class="mb-0">CHRISTIAN MORALES</h5>
+                                    <div class="h5 mb-0">CHRISTIAN MORALES</div>
                                     <p class="text-muted font-weight-normal">Independent Software Engineer</p>
                                     
                                     <div class="mb-4"></div>
         
-                                    <a href="#facebook" 
-                                        class="mr-3 text-muted">
-                                        <i class="fab fa-facebook fa-lg"></i>
-                                    </a>
-                                    <a href="#linkedin" 
-                                        class="mr-3 text-muted">
-                                        <i class="fab fa-linkedin-in fa-lg"></i>
-                                    </a>
-                                    <a href="#twitter" 
-                                        class="mr-3 text-muted">
-                                        <i class="fab fa-twitter fa-lg"></i>
-                                    </a>
+                                    <div class="flexbox-start">
+                                        <a href="https://facebook.com" 
+                                            target="_blank"
+                                            class="mr-3 text-muted">
+                                            <i class="fab fa-facebook fa-lg"></i>
+                                        </a>
+                                        <a href="https://linkedin.com" 
+                                            target="_blank"
+                                            class="mr-3 text-muted">
+                                            <i class="fab fa-linkedin-in fa-lg"></i>
+                                        </a>
+                                        <a href="https://twitter.com" 
+                                            target="_blank"
+                                            class="mr-3 text-muted">
+                                            <i class="fab fa-twitter fa-lg"></i>
+                                        </a>
+                                    </div>
                                 </div>
             
                                 <div class="col">
                                     <div class="animate__animated animate__fadeIn">
                                         <img src="resources/images/me/profile-transparent.png" 
-                                        class="img-fluid" 
-                                        alt="client">
+                                            class="img-fluid" 
+                                            alt="client"
+                                            width="555"
+                                            height="555">
                                     </div>
                                 </div>
                                 
@@ -545,8 +581,10 @@
                     <div class="col col-md-7">
                         <div class="mb-2 mb-md-0 text-center overflow-hidden">
                             <img class="img-fluid" 
-                            src="resources/images/me/profile-transparent.png" 
-                            alt="avatar">
+                                src="resources/images/me/profile-transparent.png" 
+                                alt="avatar"
+                                width="647"
+                                height="647">
                         </div>
                     </div>
 
@@ -560,37 +598,44 @@
                         </div>
 
                         <div class="flexbox-start">
-                            <a href="#facebook" 
+                            <a href="https://facebook.com" 
+                                target="_blank"
                                 class="text-muted mr-3">
                                 <i class="fab fa-facebook fa-lg"></i>
                             </a>
 
-                            <a href="#linkedin" 
+                            <a href="https://linkedin.com" 
+                                target="_blank"
                                 class="text-muted mr-3">
                                 <i class="fab fa-linkedin-in fa-lg"></i>
                             </a>
 
-                            <a href="#twitter" 
+                            <a href="https://twitter.com" 
+                                target="_blank"
                                 class="text-muted mr-3">
                                 <i class="fab fa-twitter fa-lg"></i>
                             </a>
                             
-                            <a href="#google" 
+                            <a href="https://gmail.com" 
+                                target="_blank"
                                 class="text-muted mr-3">
                                 <i class="fab fa-google fa-lg"></i>
                             </a>
 
-                            <a href="#discord" 
+                            <a href="https://discord.com" 
+                                target="_blank"
                                 class="text-muted mr-3">
                                 <i class="fab fa-discord fa-lg"></i>
                             </a>
 
-                            <a href="#behance" 
+                            <a href="https://behance.net" 
+                                target="_blank"
                                 class="text-muted mr-3">
                                 <i class="fab fa-behance fa-lg"></i>
                             </a>
 
-                            <a href="#youtube" 
+                            <a href="https://youtube.com" 
+                                target="_blank"
                                 class="text-muted mr-3">
                                 <i class="fab fa-youtube fa-lg"></i>
                             </a>
@@ -705,7 +750,6 @@
     <script defer src="plugins/@fortawesome/fontawesome-free/js/all.min.js"></script>
     <script defer src="plugins/jquery/dist/jquery.min.js"></script>
     <script defer src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script defer src="plugins/lazysizes/lazysizes.min.js"></script>
 
     <script defer src="resources/js/script.js"></script>
     <script defer src="resources/js/contact.js"></script>
