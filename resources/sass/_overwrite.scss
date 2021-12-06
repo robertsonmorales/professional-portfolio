@@ -42,15 +42,17 @@
 
 // BUTTONS
 .btn{
+    // @extend .py-3, .px-4;
+    padding: 10px 25px;
     border-radius: $radius !important;
     font-weight: 500;
     // box-shadow: $drop-shadow !important;
     // transition: all .2s ease-out;
 
-    &:active{
-        // box-shadow: $drop-shadow__active !important;
-        transform: translateY(2px);
-    }
+    // &:active{
+    //     box-shadow: $drop-shadow__active !important;
+    //     transform: translateY(2px);
+    // }
 }
 
 .btn-outline-primary{

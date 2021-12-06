@@ -10833,7 +10833,7 @@ body {
 }
 
 .rounded {
-  border-radius: 5px !important;
+  border-radius: 2px !important;
 }
 
 .rounded-top {
@@ -10863,13 +10863,9 @@ body {
 }
 
 .btn {
-  border-radius: 5px !important;
+  padding: 10px 25px;
+  border-radius: 2px !important;
   font-weight: 500;
-}
-
-.btn:active {
-  -webkit-transform: translateY(2px);
-          transform: translateY(2px);
 }
 
 .btn-outline-primary:hover {
@@ -10877,7 +10873,7 @@ body {
 }
 
 .card {
-  border-radius: 5px !important;
+  border-radius: 2px !important;
   border: none !important;
   background-color: transparent !important;
 }
@@ -10914,7 +10910,7 @@ body {
 
 .input-group .form-control {
   width: 100%;
-  border-radius: 5px !important;
+  border-radius: 2px !important;
 }
 
 .input-group .invalid-feedback {
@@ -10993,7 +10989,7 @@ body {
 /* ENDS HERE*/
 /* IMAGES */
 .img-fluid-extension {
-  border-radius: 5px;
+  border-radius: 2px;
   -o-object-fit: fill;
      object-fit: fill;
   width: 110px;
@@ -11011,8 +11007,8 @@ body {
 }
 
 .input-group label {
-  font-size: .9em !important;
   margin-bottom: 3px !important;
+  color: #f8f9fa;
 }
 
 /* ENDS HERE */
@@ -11029,8 +11025,8 @@ body {
   font-weight: 600;
 }
 
-.font-size-sm {
-  font-size: 1em !important;
+.font-size-sm, .input-group label {
+  font-size: .9em !important;
 }
 
 /* ENDS HERE */
