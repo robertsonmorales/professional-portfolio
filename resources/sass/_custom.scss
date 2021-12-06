@@ -1,3 +1,8 @@
+.hero-flexbox{
+    align-items: center;
+
+    @extend .flex-column-reverse, .flex-md-row;
+}
 /* FLEXBOX */ 
 .flexbox-center{
     @include flexbox(center);

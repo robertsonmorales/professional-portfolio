@@ -7610,7 +7610,7 @@ button.bg-dark:focus {
           flex-direction: row-reverse !important;
 }
 
-.flex-column-reverse {
+.flex-column-reverse, .hero-flexbox {
   -webkit-box-orient: vertical !important;
   -webkit-box-direction: reverse !important;
       -ms-flex-direction: column-reverse !important;
@@ -7945,7 +7945,7 @@ button.bg-dark:focus {
 }
 
 @media (min-width: 768px) {
-  .flex-md-row {
+  .flex-md-row, .hero-flexbox {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
         -ms-flex-direction: row !important;
@@ -10829,8 +10829,7 @@ body {
 
 .h1,
 .feedback {
-  font-size: 2.8rem !important;
-  line-height: 60px;
+  font-size: clamp(2rem, 10vw, 3rem) !important;
 }
 
 .rounded {
@@ -10866,15 +10865,9 @@ body {
 .btn {
   border-radius: 5px !important;
   font-weight: 500;
-  -webkit-box-shadow: 3px 4px 0 rgba(0, 0, 0, 0.2) !important;
-          box-shadow: 3px 4px 0 rgba(0, 0, 0, 0.2) !important;
-  -webkit-transition: all .2s ease-out;
-  transition: all .2s ease-out;
 }
 
 .btn:active {
-  -webkit-box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.2) !important;
-          box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.2) !important;
   -webkit-transform: translateY(2px);
           transform: translateY(2px);
 }
@@ -10941,6 +10934,12 @@ body {
 
 .carousel-inner .active {
   color: #131b23 !important;
+}
+
+.hero-flexbox {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* FLEXBOX */
