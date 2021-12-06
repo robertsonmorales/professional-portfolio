@@ -42,7 +42,6 @@
 
 // BUTTONS
 .btn{
-    // @extend .py-3, .px-4;
     padding: 10px 25px;
     border-radius: $radius !important;
     font-weight: 500;
@@ -55,9 +54,21 @@
     // }
 }
 
+.btn-primary{
+    @extend .shadow;
+
+    &:active{
+        background-color: #220897 !important;
+    }
+}
+
 .btn-outline-primary{
     &:hover{
         color: #fff !important;
+    }
+
+    &:active{
+        background-color: #220897 !important;
     }
 }
 // ENDS HERE
