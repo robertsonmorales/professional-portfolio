@@ -4,19 +4,17 @@ $(() => {
   $('#contact-form').on('submit', function(event){
     event.preventDefault();
 
-    let name = isEmpty($('#name').val(), $('#name').attr('id'), $('#name').attr('name'));
-    let emailAddress = isEmpty($('#email_address').val(), $('#email_address').attr('id'), $('#email_address').attr('name'));
-    let subject = isEmpty($('#subject').val(), $('#subject').attr('id'), $('#subject').attr('name'));
-    let message = isEmpty($('#message').val(), $('#message').attr('id'), $('#message').attr('name'));
-    let validateEmailAddress = validateEmail($('#email_address').val());
+    isEmpty($('#name').val(), $('#name').attr('id'), $('#name').attr('name'));
+    isEmpty($('#email_address').val(), $('#email_address').attr('id'), $('#email_address').attr('name'));
+    isEmpty($('#subject').val(), $('#subject').attr('id'), $('#subject').attr('name'));
+    isEmpty($('#message').val(), $('#message').attr('id'), $('#message').attr('name'));
+    validateEmail($('#email_address').val());
 
-    if(!name && !emailAddress && !subject && !message && !validateEmailAddress){
-      $('.trigger-email').attr('href', 'mailto:'+ $('#my-email').text() +'?subject='+ $('#name').val() + ': ' + $('#subject').val() +'&body='+ $('#message').val().trim().replace(' ', '%20'));
+  });
 
-      window.open($('.trigger-email').attr('href'));
-
-      $('#contact-form .form-control').val("");
-    }
+  $('#btn-reset').on('click', function(){
+    $('.form-control').removeClass('is-invalid');
+    $('.invalid-feedback').html('');
   });
 
   function isEmpty(input, id, name){
