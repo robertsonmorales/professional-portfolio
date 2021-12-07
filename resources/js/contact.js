@@ -11,10 +11,6 @@ $(() => {
     let validateEmailAddress = validateEmail($('#email_address').val());
 
     if(!name && !emailAddress && !subject && !message && !validateEmailAddress){
-      // $('#btn-submit').prop('disabled', true);
-      // $('#btn-submit').css('cursor', 'not-allowed');
-      // $('#btn-submit .mr-2').html('SENDING..');
-
       $('.trigger-email').attr('href', 'mailto:'+ $('#my-email').text() +'?subject='+ $('#name').val() + ': ' + $('#subject').val() +'&body='+ $('#message').val().trim().replace(' ', '%20'));
 
       window.open($('.trigger-email').attr('href'));
