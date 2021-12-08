@@ -1,7 +1,13 @@
 .hero-flexbox{
     align-items: center;
 
-    @extend .flex-column-reverse, .flex-md-row;
+    @extend .flex-column-reverse, 
+    .flex-lg-row,
+    .mt-md-5,
+    .px-3,
+    .py-3,
+    .px-lg-0,
+    .py-lg-0;
 }
 /* FLEXBOX */ 
 .flexbox-center{
@@ -88,6 +94,6 @@
 .contact-form{
     background-color: #fff !important;
 
-    @extend .card, .p-4, .shadow;
+    @extend .card, .p-4, .shadow, .mx-3, .mx-md-0;
 }
 /* ENDS HERE */
