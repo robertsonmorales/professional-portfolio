@@ -8160,7 +8160,7 @@ button.bg-dark:focus {
 }
 
 @media (min-width: 768px) {
-  .flex-md-row, .hero-flexbox {
+  .flex-md-row {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
         -ms-flex-direction: row !important;
@@ -8322,7 +8322,7 @@ button.bg-dark:focus {
 }
 
 @media (min-width: 992px) {
-  .flex-lg-row {
+  .flex-lg-row, .hero-flexbox {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
         -ms-flex-direction: row !important;
@@ -8967,7 +8967,8 @@ button.bg-dark:focus {
 }
 
 .mr-3,
-.mx-3 {
+.mx-3,
+.contact-form {
   margin-right: 1rem !important;
 }
 
@@ -8977,7 +8978,8 @@ button.bg-dark:focus {
 }
 
 .ml-3,
-.mx-3 {
+.mx-3,
+.contact-form {
   margin-left: 1rem !important;
 }
 
@@ -9106,22 +9108,26 @@ button.bg-dark:focus {
 }
 
 .pt-3,
-.py-3 {
+.py-3,
+.hero-flexbox {
   padding-top: 1rem !important;
 }
 
 .pr-3,
-.px-3 {
+.px-3,
+.hero-flexbox {
   padding-right: 1rem !important;
 }
 
 .pb-3,
-.py-3 {
+.py-3,
+.hero-flexbox {
   padding-bottom: 1rem !important;
 }
 
 .pl-3,
-.px-3 {
+.px-3,
+.hero-flexbox {
   padding-left: 1rem !important;
 }
 
@@ -9671,7 +9677,8 @@ button.bg-dark:focus {
     margin-top: 0 !important;
   }
   .mr-md-0,
-  .mx-md-0 {
+  .mx-md-0,
+  .contact-form {
     margin-right: 0 !important;
   }
   .mb-md-0,
@@ -9679,7 +9686,8 @@ button.bg-dark:focus {
     margin-bottom: 0 !important;
   }
   .ml-md-0,
-  .mx-md-0 {
+  .mx-md-0,
+  .contact-form {
     margin-left: 0 !important;
   }
   .m-md-1 {
@@ -9761,7 +9769,7 @@ button.bg-dark:focus {
   .m-md-5 {
     margin: 3rem !important;
   }
-  .mt-md-5,
+  .mt-md-5, .hero-flexbox,
   .my-md-5 {
     margin-top: 3rem !important;
   }
@@ -10126,19 +10134,23 @@ button.bg-dark:focus {
     padding: 0 !important;
   }
   .pt-lg-0,
-  .py-lg-0 {
+  .py-lg-0,
+  .hero-flexbox {
     padding-top: 0 !important;
   }
   .pr-lg-0,
-  .px-lg-0 {
+  .px-lg-0,
+  .hero-flexbox {
     padding-right: 0 !important;
   }
   .pb-lg-0,
-  .py-lg-0 {
+  .py-lg-0,
+  .hero-flexbox {
     padding-bottom: 0 !important;
   }
   .pl-lg-0,
-  .px-lg-0 {
+  .px-lg-0,
+  .hero-flexbox {
     padding-left: 0 !important;
   }
   .p-lg-1 {
