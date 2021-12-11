@@ -50,7 +50,7 @@
             <button class="navbar-brand border-0"
                 onclick="navSelected('home')"
                 style="background-color: transparent; outline: none;">
-                <span class="h5 mb-0 font-weight-bold secondary-font">Jethro.</span>
+                <span class="h5 mb-0 font-weight-bold secondary-font">JC.</span>
             </button>
             
             <button class="btn navbar-toggler border-0"
@@ -83,20 +83,20 @@
                                 class="nav-link"
                                 id="nav-projects">Projects</a>
                         </li>
-                        <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
+                        <!-- <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
                             <a href="#testimonials"
                                 class="nav-link"
                                 id="nav-testimonials">Testimonials</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
-                            <a href="#about"
+                            <a href="#about-me"
                                 class="nav-link"
-                                id="nav-about">About</a>
+                                id="nav-about-me">About Me</a>
                         </li>
                         <li class="nav-item mr-0 mb-2 mb-md-0"> <!-- mr-md-5 -->
                             <a href="#contact"
                                 class="nav-link"
-                                id="nav-contact">Contact Me</a>
+                                id="nav-contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -120,7 +120,7 @@
                         <button class="btn btn-primary"
                             onclick="navSelected('projects')">View Projects</button>
 
-                        <button class="btn btn-outline-primary d-none d-md-inline">Download CV</button>
+                        <button class="btn btn-outline-primary d-none d-md-inline">Download CV <i class="fas fa-print ml-2"></i></button>
                     </div>
                 </div>
 
@@ -140,8 +140,57 @@
     </header>
     <!-- ENDS HERE -->
 
+    <section class="py-5 bg-light" id="clients">
+        <div class="container">
+            <div class="text-center">
+                <div class="text-primary font-weight-600">SATISFIED CLIENTS</div>
+                <div class="h2 font-weight-600 secondary-font">I've Worked With</div>
+            </div>
+
+            <div class="my-5"></div>
+
+            <div class="flexbox-center flex-wrap">
+                <img class="mx-auto img-fluid"
+                    alt="Grab"
+                    src="https://www.grab.com/ph/wp-content/themes/grabsg/public/img/grab_logo_158.png"
+                    width="80">
+                    
+                <img class="mx-auto img-fluid"
+                    alt="Grab"
+                    src="resources/images/clients/foodpand.svg"
+                    width="80">
+                    
+                <img class="mx-auto img-fluid"
+                    alt="Google"
+                    src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+                    width="80">
+                    
+                <img class="mx-auto img-fluid"
+                    alt="Lazada"
+                    src="https://laz-img-cdn.alicdn.com/images/ims-web/TB19SB7aMFY.1VjSZFnXXcFHXXa.png"
+                    width="80">
+                    
+                <img class="mx-auto img-fluid"
+                    alt="BDO"
+                    src="https://www.bdo.com.ph/sites/default/files/images/BDO-logo-2019.png"
+                    width="80">
+                    
+                <img class="mx-auto img-fluid"
+                    alt="Paypal"
+                    src="https://www.paypalobjects.com/digitalassets/c/website/logo/full-text/pp_fc_hl.svg"
+                    width="80">
+                    
+                <img class="mx-auto img-fluid"
+                    alt="Security Bank"
+                    src="https://www.securitybank.com/wp-content/themes/sb/img/sbc-logo.svg"
+                    width="80">
+
+            </div>
+        </div>
+    </section>
+
     <!-- SERVICES -->
-    <section id="services" class="min-height-center-100 bg-light">
+    <section id="services" class="min-height-center-100">
         <div class="container my-5">
             <div class="text-center">
                 <div class="text-primary font-weight-600">SERVICES</div>
@@ -236,7 +285,7 @@
 
     <!-- PROJECTS -->            
     <div id="projects"></div>
-    <section class="my-5 py-5">
+    <section class="py-5 bg-light">
         <div class="text-center">
             <div class="text-primary font-weight-600">PROJECTS</div>
             <div class="h2 font-weight-600 secondary-font">Best Works</div>
@@ -413,12 +462,15 @@
                 </div>
             </div>
 
+            <div class="flexbox-center">
+                <a href="#view-more-projects" class="btn btn-link">View More Projects <span class="ml-1">&#8594;</span></a>
+            </div>
         </div>
     </section>
     <!-- ENDS HERE -->
 
     <!-- TESTIMONIES -->
-    <section id="testimonials" class="min-height-center-100 bg-light">
+    <section id="testimonials" class="min-height-center-100">
         <div class="container mt-5 pt-5">
             <div class="text-center">
                 <div class="text-primary font-weight-600">TESTIMONIALS</div>
@@ -465,13 +517,13 @@
                                 </div>
                             </div>
         
-                            <div class="col">
+                            <div class="col col-md-7">
                                 <div class="animate__animated animate__fadeIn">
                                     <img src="resources/images/me/profile-transparent.png" 
                                         class="img-fluid" 
                                         alt="client"
-                                        width="555"
-                                        height="555">
+                                        width="647"
+                                        height="647">
                                 </div>
                             </div>
                             
@@ -510,13 +562,13 @@
                                 </div>
                             </div>
         
-                            <div class="col">
+                            <div class="col col-md-7">
                                 <div class="animate__animated animate__fadeIn">
                                     <img src="resources/images/me/profile-transparent.png" 
                                         class="img-fluid" 
                                         alt="client"
-                                        width="555"
-                                        height="555">
+                                        width="647"
+                                        height="647">
                                 </div>
                             </div>
                             
@@ -555,13 +607,13 @@
                                 </div>
                             </div>
         
-                            <div class="col">
+                            <div class="col col-md-7">
                                 <div class="animate__animated animate__fadeIn">
                                     <img src="resources/images/me/profile-transparent.png" 
                                         class="img-fluid" 
                                         alt="client"
-                                        width="555"
-                                        height="555">
+                                        width="647"
+                                        height="647">
                                 </div>
                             </div>
                             
@@ -574,8 +626,8 @@
     <!-- ENDS HERE -->
 
     <!-- ABOUT ME --> 
-    <section class="mt-5" id="about">
-        <div class="container">
+    <section class="bg-light" id="about-me">
+        <div class="container pt-5">
             <div class="row no-gutters flex-column flex-md-row align-items-md-center">
                 <div class="col col-md-7">
                     <div class="mb-2 mb-md-0 text-center overflow-hidden">
@@ -589,13 +641,18 @@
 
                 <div class="col">
                     <div class="ml-lg-5 mb-5">
-                        <div class="d-flex flex-column mb-3">
-                            <!-- <h5 class="mb-3 text-primary">A BIT ABOUT ME</h5> -->
-                            <div class="text-primary font-weight-600">A BIT ABOUT ME</div>
+                        <div class="d-flex flex-column">
+                            <div class="text-primary font-weight-600 mb-3">A BIT ABOUT ME</div>
 
                             <h2 class="h2 font-weight-600 secondary-font">Jethro Caparosso</h2>
                             <p class="text-justify text-md-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo numquam quos voluptatibus ut sint ex, iste maiores nesciunt quasi, incidunt dolorum hic consequatur nobis consequuntur eligendi quia soluta non libero dolorem corporis. Eius quia deserunt amet veritatis aspernatur, velit excepturi quasi blanditiis, dolore iusto accusamus eos delectus nostrum cumque est!</p>
+
+                            <div class="text-left">
+                                <button class="btn btn-outline-primary">Download CV <i class="fas fa-print ml-2"></i></button>
+                            </div>
                         </div>
+
+                        <hr class="my-4 w-75">
 
                         <div class="flexbox-start">
                             <a href="https://facebook.com" 
@@ -615,29 +672,17 @@
                                 class="text-muted mr-3">
                                 <i class="fab fa-twitter fa-lg"></i>
                             </a>
-                            
-                            <a href="https://gmail.com" 
-                                target="_blank"
-                                class="text-muted mr-3">
-                                <i class="fab fa-google fa-lg"></i>
-                            </a>
-
-                            <a href="https://discord.com" 
-                                target="_blank"
-                                class="text-muted mr-3">
-                                <i class="fab fa-discord fa-lg"></i>
-                            </a>
 
                             <a href="https://behance.net" 
                                 target="_blank"
                                 class="text-muted mr-3">
                                 <i class="fab fa-behance fa-lg"></i>
                             </a>
-
-                            <a href="https://youtube.com" 
+                            
+                            <a href="https://dribbble.com" 
                                 target="_blank"
                                 class="text-muted mr-3">
-                                <i class="fab fa-youtube fa-lg"></i>
+                                <i class="fab fa-dribbble fa-lg"></i>
                             </a>
                         </div>
                     </div>
@@ -648,11 +693,11 @@
     <!-- ENDS HERE -->
 
     <!-- CONTACT ME -->
-    <section id="contact" class="min-height-center-100 bg-light">
-        <div class="container px-0 mt-5">
+    <footer id="contact" class="min-height-center-100 bg-dark">
+        <div class="container pt-5">
             <div class="text-center">
-                <div class="text-primary font-weight-600">CONTACT ME</div>
-                <div class="h2 font-weight-600 secondary-font">Stay Connected</div>
+                <div class="text-light font-weight-600">CONTACT</div>
+                <div class="text-light h2 font-weight-600 secondary-font">Stay Connected</div>
             </div>
 
             <div class="row no-gutters justify-content-center flex-column flex-md-row my-5">
@@ -661,46 +706,60 @@
                         action="#"
                         method="post" 
                         id="contact-form">
-                        <div class="font-weight-600">SEND A MESSAGE</div>
+                        <div class="font-weight-600">SAY HELLO</div>
                         <hr>
                         <div class="input-group">
-                            <label for="name">Name <span class="text-danger">*</span></label>
-                            <input type="text" 
-                                name="name" 
-                                id="name" 
-                                class="form-control" 
-                                autocomplete="off">
+                            <label for="name">Name</label>
+                            <div class="input-with-icon">
+                                <input type="text" 
+                                    name="name" 
+                                    id="name" 
+                                    class="form-control" 
+                                    autocomplete="off">
+                                <i class="fas fa-user icon"></i>
+                            </div>
+                            
                             <span class="invalid-feedback" 
                             id="validate-name"></span>
                         </div>
                         <div class="input-group">
-                            <label for="email_address">Email Address <span class="text-danger">*</span></label>
-                            <input type="text" 
-                                name="email_address"
-                                id="email_address" 
-                                class="form-control" 
-                                autocomplete="off">
+                            <label for="email_address">Email Address</label>
+                            <div class="input-with-icon">
+                                <input type="text" 
+                                    name="email_address"
+                                    id="email_address" 
+                                    class="form-control" 
+                                    autocomplete="off">
+                                <i class="fas fa-at icon"></i>
+                            </div>
                             <span class="invalid-feedback" 
                                 id="validate-email_address"></span>
                         </div>
                         <div class="input-group">
-                            <label for="subject">Subject <span class="text-danger">*</span></label>
-                            <input type="text" 
-                                name="subject" 
-                                id="subject" 
-                                class="form-control" 
-                                autocomplete="off">
+                            <label for="subject">Subject</label>
+                            
+                            <div class="input-with-icon">
+                                <input type="text" 
+                                    name="subject" 
+                                    id="subject" 
+                                    class="form-control" 
+                                    autocomplete="off">
+                                <i class="fas fa-tag icon"></i>
+                            </div>
                             <span class="invalid-feedback" 
                                 id="validate-subject"></span>
                         </div>
                         <div class="input-group">
-                            <label for="message">Message <span class="text-danger">*</span></label>
-                            <textarea name="message" 
-                                id="message" 
-                                cols="30" 
-                                rows="3" 
-                                class="form-control" 
-                                autocomplete="off"></textarea>
+                            <label for="message">Message</label>
+                            <div class="input-with-icon">
+                                <textarea name="message" 
+                                    id="message" 
+                                    cols="30" 
+                                    rows="3" 
+                                    class="form-control" 
+                                    autocomplete="off"></textarea>
+                                <i class="fas fa-align-left icon"></i>
+                            </div>
                             <span class="invalid-feedback" 
                                 id="validate-message"></span>
                         </div>
@@ -718,13 +777,11 @@
                     </form>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- ENDS HERE -->
 
-    <footer class="bg-light">
-        <p class="text-center font-size-sm mb-0">© <span id="year"></span> | Jethro Caparosso</p>
+            <p class="text-center font-size-sm text-light">© Copyright <span id="year"></span> | Jethro Caparosso</p>
+        </div>
     </footer>
+    <!-- ENDS HERE -->
 
     <!-- <div class="modal fade" 
         id="modal" 

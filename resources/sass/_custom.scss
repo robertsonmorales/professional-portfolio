@@ -44,6 +44,26 @@
     label{
         margin-bottom: 3px !important;
         @extend .font-size-sm;
+
+        &::after{
+            content: ' *';
+            @extend .text-danger;
+        }
+    }
+
+    .input-with-icon{
+        position: relative;
+
+        .form-control{
+            padding-left: 30px;
+        }
+
+        .icon{
+            position: absolute;
+            top: 11px;
+            left: 10px;
+            @extend .text-muted;
+        }
     }
 }
 /* ENDS HERE */
@@ -86,7 +106,9 @@
 /* FEEDBACK */
 .feedback{
     color: $primary;
-    @extend .h1, .font-weight-bold, .secondary-font;
+    @extend .h1, 
+    .font-weight-bold, 
+    .secondary-font;
 }
 /* ENDS HERE */
 
