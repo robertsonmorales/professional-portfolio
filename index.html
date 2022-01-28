@@ -45,6 +45,30 @@
 
 </head>
 <body data-spy="scroll" data-target="#navbar">
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "105844545345201");
+        chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+  
+      <!-- Your SDK code -->
+    <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v12.0'
+          });
+        };
+  
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
         <div class="container">
             <button class="navbar-brand border-0"
@@ -104,6 +128,15 @@
         </div>
     </nav>
 
+    <!-- <div id="message-me">
+        <a href="#message-me">
+            <img src="resources/images/messenger.png"
+                alt="Message me on facebook"
+                width="50"
+                height="50">
+        </a>
+    </div> -->
+
     <!-- HERO SECTION -->
     <header class="min-height-center-100" id="home">
         <div class="container">
@@ -140,7 +173,7 @@
     </header>
     <!-- ENDS HERE -->
 
-    <section class="py-5 bg-light" id="clients">
+    <section class="py-5 mb-5 bg-light" id="clients">
         <div class="container">
             <div class="text-center">
                 <div class="text-primary font-weight-600">SATISFIED CLIENTS</div>
@@ -470,14 +503,17 @@
     <!-- ENDS HERE -->
 
     <!-- TESTIMONIES -->
-    <section id="testimonials" class="min-height-center-100">
+    <section id="testimonials" 
+        class="min-height-center-100">
         <div class="container mt-5 pt-5">
             <div class="text-center">
                 <div class="text-primary font-weight-600">TESTIMONIALS</div>
                 <div class="h2 font-weight-600 secondary-font">What My Clients' Say</div>
             </div>
 
-            <div id="testimonials-carousel" class="carousel slide" data-ride="carousel">
+            <div id="testimonials-carousel" 
+                class="carousel slide" 
+                data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#testimonials-carousel" data-slide-to="0" class="active"></li>
                     <li data-target="#testimonials-carousel" data-slide-to="1"></li>
@@ -693,11 +729,11 @@
     <!-- ENDS HERE -->
 
     <!-- CONTACT ME -->
-    <footer id="contact" class="min-height-center-100 bg-dark">
+    <footer id="contact" class="min-height-center-100">
         <div class="container pt-5">
             <div class="text-center">
-                <div class="text-light font-weight-600">CONTACT</div>
-                <div class="text-light h2 font-weight-600 secondary-font">Stay Connected</div>
+                <div class="text-primary font-weight-600">CONTACT</div>
+                <div class="h2 font-weight-600 secondary-font">Stay Connected</div>
             </div>
 
             <div class="row no-gutters justify-content-center flex-column flex-md-row my-5">
@@ -706,7 +742,7 @@
                         action="#"
                         method="post" 
                         id="contact-form">
-                        <div class="font-weight-600">SAY HELLO</div>
+                        <div class="font-weight-600">SAY HELLO 👋</div>
                         <hr>
                         <div class="input-group">
                             <label for="name">Name</label>
@@ -804,6 +840,14 @@
             </div>
         </div>
     </div> -->
+
+
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
 
     <script defer src="plugins/@fortawesome/fontawesome-free/js/all.min.js"></script>
     <script defer src="plugins/jquery/dist/jquery.min.js"></script>
