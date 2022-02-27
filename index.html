@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hi there, I am Jethro Caparosso. Web Designer and Developer">
+    <meta name="description" content="Hi there, I am Jan Vincent Morales. Web Designer and Developer">
 
-    <title>Jethro Caparroso</title>
+    <title>Jan Vincent Morales</title>
 
     <!-- styles -->
     <link rel="preload" href="plugins/bootstrap/dist/css/bootstrap.min.css" as="style">
@@ -47,11 +47,11 @@
 <body data-spy="scroll" data-target="#navbar">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
         <div class="container">
-            <button class="navbar-brand border-0"
-                onclick="navSelected('home')"
+            <a class="navbar-brand border-0"
+                href="#home"
                 style="background-color: transparent; outline: none;">
-                <span class="h5 mb-0 font-weight-bold secondary-font">JC.</span>
-            </button>
+                <span class="h5 mb-0 font-weight-bold secondary-font">Jvincent<span class="text-primary">.</span></span>
+            </a>
             
             <button class="btn navbar-toggler border-0"
                 type="button" 
@@ -104,15 +104,6 @@
         </div>
     </nav>
 
-    <!-- <div id="message-me">
-        <a href="#message-me">
-            <img src="resources/images/messenger.png"
-                alt="Message me on facebook"
-                width="50"
-                height="50">
-        </a>
-    </div> -->
-
     <!-- HERO SECTION -->
     <header class="min-height-center-100" id="home">
         <div class="container">
@@ -122,14 +113,14 @@
                     <div class="mt-3 mt-md-0 animate__animated animate__fadeIn animate__delay-1s pr-lg-5">
                         <span class="mb-3">Hi there 👋,</span>
 
-                        <div class="mb-3 h1 font-weight-bold secondary-font">I am Jethro, a Web <span class="text-primary">Designer</span> & <span class="text-primary">Developer</span></div>
+                        <div class="mb-3 h1 font-weight-bold secondary-font">I am Jan Vincent, a Web <span class="text-primary">Designer</span> & <span class="text-primary">Developer</span></div>
 
-                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ex.</p>
+                        <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam cumque nemo debitis pariatur omnis quaerat quidem hic modi asperiores rem!</p>
     
-                        <button class="btn btn-primary"
-                            onclick="navSelected('projects')">View Projects</button>
+                        <a class="btn btn-primary"
+                            href="#projects">View Projects</a>
 
-                        <button class="btn btn-outline-primary d-none d-md-inline">Download CV <i class="fas fa-print ml-2"></i></button>
+                        <button class="btn btn-outline-primary d-none d-md-inline">Download Resume <i class="fas fa-print ml-2"></i></button>
                     </div>
                 </div>
 
@@ -149,55 +140,6 @@
     </header>
     <!-- ENDS HERE -->
 
-    <section class="py-5 mb-5 bg-light" id="clients">
-        <div class="container">
-            <div class="text-center">
-                <div class="text-primary font-weight-600">SATISFIED CLIENTS</div>
-                <div class="h2 font-weight-600 secondary-font">I've Worked With</div>
-            </div>
-
-            <div class="my-5"></div>
-
-            <div class="flexbox-center flex-wrap">
-                <img class="mx-auto img-fluid"
-                    alt="Grab"
-                    src="https://www.grab.com/ph/wp-content/themes/grabsg/public/img/grab_logo_158.png"
-                    width="80">
-                    
-                <img class="mx-auto img-fluid"
-                    alt="Grab"
-                    src="resources/images/clients/foodpand.svg"
-                    width="80">
-                    
-                <img class="mx-auto img-fluid"
-                    alt="Google"
-                    src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-                    width="80">
-                    
-                <img class="mx-auto img-fluid"
-                    alt="Lazada"
-                    src="https://laz-img-cdn.alicdn.com/images/ims-web/TB19SB7aMFY.1VjSZFnXXcFHXXa.png"
-                    width="80">
-                    
-                <img class="mx-auto img-fluid"
-                    alt="BDO"
-                    src="https://www.bdo.com.ph/sites/default/files/images/BDO-logo-2019.png"
-                    width="80">
-                    
-                <img class="mx-auto img-fluid"
-                    alt="Paypal"
-                    src="https://www.paypalobjects.com/digitalassets/c/website/logo/full-text/pp_fc_hl.svg"
-                    width="80">
-                    
-                <img class="mx-auto img-fluid"
-                    alt="Security Bank"
-                    src="https://www.securitybank.com/wp-content/themes/sb/img/sbc-logo.svg"
-                    width="80">
-
-            </div>
-        </div>
-    </section>
-
     <!-- SERVICES -->
     <section id="services" class="min-height-center-100">
         <div class="container my-5">
@@ -207,7 +149,7 @@
             </div>
             <div class="card-deck my-3 my-md-5">
 
-                <div class="card mb-sm-3">
+                <div class="card mb-sm-3 text-center">
                     <div class="mb-2 p-3">
                         <img src="resources/images/services/ui.png"
                         alt="UI/UX Design"
@@ -220,7 +162,7 @@
                     </div>
                 </div>
 
-                <div class="card mb-sm-3">
+                <div class="card mb-sm-3 text-center">
                     <div class="mb-2 p-3">
                         <img src="resources/images/services/responsive.png"
                         alt="Responsive Website Design"
@@ -233,7 +175,7 @@
                     </div>
                 </div>
 
-                <div class="card mb-sm-3">
+                <div class="card mb-sm-3 text-center">
                     <div class="mb-2 p-3">
                         <img src="resources/images/services/html.png"
                         alt="Convert Prototypes to HTML pages"
@@ -248,7 +190,7 @@
 
                 <div class="d-none d-lg-block w-100"></div>
 
-                <div class="card mb-sm-3">
+                <div class="card mb-sm-3 text-center">
                     <div class="mb-2 p-3">
                         <img src="resources/images/services/app-development.png"
                         alt="Website Application"
@@ -261,7 +203,7 @@
                     </div>
                 </div>
 
-                <div class="card mb-sm-3">
+                <div class="card mb-sm-3 text-center">
                     <div class="mb-2 p-3">
                         <img src="resources/images/services/seo.png"
                         alt="Search Engine Optimization"
@@ -274,7 +216,7 @@
                     </div>
                 </div>
 
-                <div class="card mb-sm-3">
+                <div class="card mb-sm-3 text-center">
                     <div class="mb-2 p-3">
                         <img src="resources/images/services/data-protection.png"
                         alt="Database Security"
@@ -501,12 +443,12 @@
                         <div class="row no-gutters justify-content-md-between justify-content-lg-center align-items-center flex-column-reverse flex-md-row mt-md-5 px-3 px-md-0">
 
                             <div class="col">
-                                <h2 class="feedback">&#8220;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, architecto.&#8221;</h2>
+                                <h2 class="feedback">I can see you’re having a positive impact in your new office, people seem really happy to have you on their team.</h2>
         
                                 <hr class="my-4 w-50">
     
-                                <div class="h5 mb-0">CHRISTIAN MORALES</div>
-                                <p class="text-muted font-weight-normal">Independent Software Engineer</p>
+                                <div class="h5 mb-0 text-primary">Stephan Green</div>
+                                <p class="text-muted font-weight-normal">Owner of Company ABC</p>
                                 
                                 <div class="mb-4"></div>
     
@@ -529,13 +471,13 @@
                                 </div>
                             </div>
         
-                            <div class="col col-md-7">
+                            <div class="col col-md-6">
                                 <div class="animate__animated animate__fadeIn">
-                                    <img src="resources/images/me/profile-transparent.png" 
+                                    <img src="resources/images/clients/client-1.png" 
                                         class="img-fluid" 
                                         alt="client"
-                                        width="647"
-                                        height="647">
+                                        width="577"
+                                        height="804">
                                 </div>
                             </div>
                             
@@ -546,12 +488,13 @@
                         <div class="row no-gutters justify-content-md-between justify-content-lg-center align-items-center flex-column-reverse flex-md-row mt-md-5 px-3 px-md-0">
 
                             <div class="col">
-                                <h2 class="feedback">&#8220;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, architecto.&#8221;</h2>
+                                <!-- &#8220; &#8221; -->
+                                <h2 class="feedback">One of your most impactful moments was how you handled Project X.</h2>
         
                                 <hr class="my-4 w-50">
     
-                                <div class="h5 mb-0">CHRISTIAN MORALES</div>
-                                <p class="text-muted font-weight-normal">Independent Software Engineer</p>
+                                <div class="h5 mb-0 text-primary">Aubrey Zuri</div>
+                                <p class="text-muted font-weight-normal">CEO of Company 123</p>
                                 
                                 <div class="mb-4"></div>
     
@@ -574,13 +517,13 @@
                                 </div>
                             </div>
         
-                            <div class="col col-md-7">
+                            <div class="col col-md-6">
                                 <div class="animate__animated animate__fadeIn">
-                                    <img src="resources/images/me/profile-transparent.png" 
+                                    <img src="resources/images/clients/client-2.png" 
                                         class="img-fluid" 
                                         alt="client"
-                                        width="647"
-                                        height="647">
+                                        width="577"
+                                        height="804">
                                 </div>
                             </div>
                             
@@ -591,12 +534,12 @@
                         <div class="row no-gutters justify-content-md-between justify-content-lg-center align-items-center flex-column-reverse flex-md-row mt-md-5 px-3 px-md-0">
 
                             <div class="col">
-                                <h2 class="feedback">&#8220;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, architecto.&#8221;</h2>
+                                <h2 class="feedback">One of the things I admire about you is your ability to manage a team remotely.</h2>
         
                                 <hr class="my-4 w-50">
     
-                                <div class="h5 mb-0">CHRISTIAN MORALES</div>
-                                <p class="text-muted font-weight-normal">Independent Software Engineer</p>
+                                <div class="h5 mb-0 text-primary">John Brooke</div>
+                                <p class="text-muted font-weight-normal">Restaurant Owner</p>
                                 
                                 <div class="mb-4"></div>
     
@@ -619,13 +562,13 @@
                                 </div>
                             </div>
         
-                            <div class="col col-md-7">
+                            <div class="col col-md-6">
                                 <div class="animate__animated animate__fadeIn">
-                                    <img src="resources/images/me/profile-transparent.png" 
+                                    <img src="resources/images/clients/client-3.png" 
                                         class="img-fluid" 
                                         alt="client"
-                                        width="647"
-                                        height="647">
+                                        width="577"
+                                        height="804">
                                 </div>
                             </div>
                             
@@ -656,11 +599,11 @@
                         <div class="d-flex flex-column">
                             <div class="text-primary font-weight-600 mb-3">A BIT ABOUT ME</div>
 
-                            <h2 class="h2 font-weight-600 secondary-font">Jethro Caparosso</h2>
+                            <h2 class="h2 font-weight-600 secondary-font">Jan Vincent Morales</h2>
                             <p class="text-justify text-md-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo numquam quos voluptatibus ut sint ex, iste maiores nesciunt quasi, incidunt dolorum hic consequatur nobis consequuntur eligendi quia soluta non libero dolorem corporis. Eius quia deserunt amet veritatis aspernatur, velit excepturi quasi blanditiis, dolore iusto accusamus eos delectus nostrum cumque est!</p>
 
                             <div class="text-left">
-                                <button class="btn btn-outline-primary">Download CV <i class="fas fa-print ml-2"></i></button>
+                                <button class="btn btn-outline-primary">Download Resume <i class="fas fa-print ml-2"></i></button>
                             </div>
                         </div>
 
@@ -790,7 +733,7 @@
                 </div>
             </div>
 
-            <p class="text-center font-size-sm text-light">© Copyright <span id="year"></span> | Jethro Caparosso</p>
+            <p class="text-center font-size-sm text-light">© Copyright <span id="year"></span> | Jan Vincent Morales</p>
         </div>
     </footer>
     <!-- ENDS HERE -->
